@@ -1,0 +1,46 @@
+
+.profile_info {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.user_thumbnail img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.user_content {
+    flex-grow: 1;
+}
+
+.user_name {
+    margin-bottom: 5px;
+}
+
+.user_title {
+    font-size: 12px;
+    color: #777;
+}
+
+.settings_options {
+    padding: 0;
+}
+
+.settings_options li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.settings_options a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.settings_options a i {
+    margin-right: 10px;
+}
