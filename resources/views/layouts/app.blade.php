@@ -32,5 +32,9 @@
                 {{ $slot }}
             </main>
         </div>
+        {{-- <script>
+            const userId = "{{ Auth::id() }}";
+        </script> --}}
+        {{-- <script src="{{ asset('resources/js/app.js') }}"></script> --}}
     </body>
 </html>

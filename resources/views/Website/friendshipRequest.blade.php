@@ -1,4 +1,4 @@
-@extends('Website.layouts.master')
+@extends('Website.master')
 
 @section('content')
     <div class="container" style="margin-top: 150px;">
@@ -33,8 +33,5 @@
             </div>
         @endif
     </div>
-    {{-- <script src="{{ asset('js/app.js') }}"></script>
-    <script>
-        const userId = {{ Auth::id() }};
-    </script> --}}
+    <script src="{{asset('js/app.js')}}"></script>
 @endsection

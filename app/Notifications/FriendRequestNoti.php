@@ -52,7 +52,7 @@ class FriendRequestNoti extends Notification
     {
         return new BroadcastMessage([
             'sender' => $this->sender,
-            'message' => 'You have a new friend request from ' . $this->sender->name,
+            'body' => 'You have a new friend request from ' . $this->sender->name,
         ]);
     }
 }

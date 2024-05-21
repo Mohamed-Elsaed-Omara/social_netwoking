@@ -16,21 +16,23 @@ class FriendRequestController extends Controller
     public function addFriend($senderId)
     {
         $receiverId = Auth::id();
-        
+
         Connection::create([
             'sender_id' => $senderId,
             'receiver_id' => $receiverId,
         ]);
 
+        // Send notification
         $sender = User::findOrFail($senderId);
 
-        $receiver = User::findOrFail($receiverId);
-    
-        // Send notification
-        $receiver->notify(new FriendRequestNoti($sender));
+        $receiver = User::findOrFail($receiverId); 
+        
+        $receiver->notify(new FriendRequestNoti($receiver));
 
         return back();
     }
+
+
 
     public function rejectFriend(Request $request)
     {

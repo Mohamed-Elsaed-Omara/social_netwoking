@@ -34,9 +34,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthTokenController::class, 'logout']);
     Route::apiResource('user-profiles', UserProfileController::class);
 
-    Route::apiResource('posts', PostController::class);
+    Route::apiResource('api-posts', PostController::class);
+
     Route::apiResource('comments-posts', CommentController::class);
-    Route::apiResource('liks-posts', LikeController::class);
+    
     Route::apiResource('liks-posts', LikeController::class);
     
     Route::apiResource('connections', ConnectionController::class);
